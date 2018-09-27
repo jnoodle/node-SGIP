@@ -1,0 +1,31 @@
+{
+  "name": "node-sgip",
+  "version": "1.0.0",
+  "description": "SGIP 1.2 Node.js",
+  "main": "index.js",
+  "repository": "https://github.com/jnoodle/node-sgip.git",
+  "keywords": [
+    "SGIP",
+    "联通",
+    "中国联通",
+    "Unicom",
+    "China Unicom"
+  ],
+  "author": "jnoodle <fullstack@126.com> (https://github.com/jnoodle)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/jnoodle/node-sgip/issues"
+  },
+  "homepage": "https://github.com/jnoodle/node-sgip#readme",
+  "scripts": {
+    "test": "mocha --reporter spec",
+    "cover": "istanbul cover node_modules/mocha/bin/_mocha -- -R spec test/*",
+    "coveralls": "npm run cover -- --report lcovonly && cat ./coverage/lcov.info | coveralls"
+  },
+  "devDependencies": {
+    "chai": "^4.2.0",
+    "coveralls": "^3.0.2",
+    "istanbul": "^0.4.5",
+    "mocha": "^5.2.0"
+  }
+}
